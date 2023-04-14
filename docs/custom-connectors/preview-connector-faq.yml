@@ -1,0 +1,93 @@
+### YamlMime:FAQ
+metadata:
+  title: Preview connector frequently asked questions for Azure Logic Apps, Power Automate, and Power Apps | Microsoft Docs
+  description: FAQ about requirements, triggers, and more for preview connectors.
+  author: crisp555
+  contributors:
+    - crisp555
+    - v-aangie
+  services: connectors
+  ms.service: connectors
+  ms.workload: connectors
+  ms.topic: conceptual
+  ms.date: 12/05/2022
+  ms.author: cponath
+  ms.reviewer: angieandrews
+title: Preview connector FAQ for Azure Logic Apps, Power Automate, and Power Apps
+summary: |
+
+  We've compiled a list of frequently asked questions and provided brief answers to help you get to your information quickly.
+
+sections:
+  - name: General
+    questions:
+      - question: |
+          How can I find out if a connector, trigger, or action is in preview?
+        answer: |
+          The connector details page will contain the word “Preview” in the title, the trigger, or the action if the connector, trigger, or action is in preview state.  Connectors, triggers, and actions without this designation are generally available and don't have the limitations associated with previews. 
+
+          Examples
+
+          - [Preview connector with the Preview designation in the title](/connectors/alkymi/).
+
+            :::image type="content" source="media/preview-connector-faq/preview-example-title.png" alt-text="Screenshot of the Alkymi connector with Preview designation in the title.":::
+
+          - [Preview trigger with the Preview designation in the trigger title](/connectors/wdatp/#triggers-when-a-new-remediation-activity-is-created-(preview)).
+
+            :::image type="content" source="media/preview-connector-faq/preview-example-remediation.png" alt-text="Screenshot of the 'Triggers when a new remediation activity is created' trigger with the Preview designation in the title.":::
+
+          - Preview action with Preview designation in action title.
+          
+            - [Example 1: Search rows (preview)](/connectors/commondataserviceforapps/#search-rows-(preview))
+
+              :::image type="content" source="media/preview-connector-faq/preview-example-search-rows.png" alt-text="Screenshot of the 'Search rows' action with the preview designation in the title.":::
+
+            - [Example 2: Start automated investigation on a machine (Preview)](/connectors/wdatp/#actions---start-automated-investigation-on-a-machine-(preview))
+
+              :::image type="content" source="media/preview-connector-faq/preview-example-investigation.png" alt-text="Screenshot of the 'Actions - Start automated investigation on a machine' action with the Preview designation in the title.":::
+
+      - question: |
+          What does preview status mean for a connector?
+        answer: |
+          Microsoft wants to make sure that a connector is stable before we release it to general availability. Until that time, the connector is in preview. Previews are provided "as is," "with all faults," and "as available". They're excluded from service level agreements (SLAs), but are made available on a preview basis so that you can get early access and provide feedback. [Learn more about preview features and how to enable them](/power-platform/admin/what-are-preview-features-how-do-i-enable-them). Previews might not be covered by customer support. They might be discontinued at any time without notice and might not be released into general availability.  
+
+          We encourage you to try out the preview connectors and provide feedback. This will help us stabilize and improve the connectors. You can use the [product forums](https://powerusers.microsoft.com/t5/Using-Connectors/bd-p/ConnectingToData) for sharing issues and feedback. Microsoft support might not be available for preview features, including connectors, but we'll try to provide support on a best-effort basis.  
+
+      - question: |
+          What does general availability status mean for a connector?
+        answer: |
+          General availability status means that the connector can be used in production and is fully supported. Criteria for a connector to be promoted from preview to general availability are described in the [documentation](certification-to-ga.md#criteria-for-moving-to-ga).
+
+      - question: |
+          When does a connector get to general availability? 
+        answer: |
+          There's no fixed timeline for when a preview connector will get to general availability. Microsoft provides a set of [criteria and guidelines](certification-to-ga.md#required-criteria) to connector publishers for when to move to general availability.
+
+          Your feedback and connector health are important for Microsoft and our partners to gauge demand and readiness for general availability. Please share your feedback in the [product forum](https://powerusers.microsoft.com/t5/Using-Connectors/bd-p/ConnectingToData). We also encourage you to [reach out to the connector owner](#i-want-to-use-a-preview-connector-in-my-production-apps--how-can-i-request-for-general-availability-or-inquire-about-the-general-availability-status-of-a-preview-connector-).  
+
+      - question: |
+          Can or should I use a preview connector?
+        answer: |
+          We encourage you to use preview connectors in your development apps only and provide feedback. Preview functionality, including connectors, isn't recommended for use in production apps. 
+
+      - question: |
+          I want to use a preview connector in my production apps. How can I request for general availability or inquire about the general availability status of a preview connector?
+        answer: |
+          Our recommendation is not to use any preview functionality, including connectors, in production apps. Please share your feedback and request for general availability in the [product forum](https://powerusers.microsoft.com/t5/Using-Connectors/bd-p/ConnectingToData). The connector details page displays information about the publisher.  
+
+          - For any requests or queries regarding the general availability status of a connector whose publisher is Microsoft, create a product support ticket. Microsoft can provide guidance around the general availability of the connector. 
+
+            Example
+
+            :::image type="content" source="media/preview-connector-faq/preview-example-blob.png" alt-text="Screenshot of where to find the publisher in the 'Azure Blob Storage' connector.":::
+
+          - For any requests or queries regarding the general availability status of a connector whose publisher is not Microsoft, contact the publisher directly using the support email address or support link in the connector details page. You can also open a product ticket. In that case, our support team will contact the publisher using the information provided in their documentation.  
+
+            Example
+
+            :::image type="content" source="media/preview-connector-faq/preview-support.png" alt-text="Screenshot of where to find the contact email and publisher in the Adobe Creative Cloud' (Preview) connector.":::
+
+      - question: |
+          The connector is GA (general availability) status and then the publisher adds an action or trigger. Is the connector still GA?  
+        answer: |
+          Yes, the connector will remain in GA with its existing features. If the new action or new trigger doesn't meet general availability criteria, only the new action or trigger will be in preview.  
