@@ -1,14 +1,9 @@
-# Power Platform: developer hub
+# Power Platform Developer Hub
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+> This repo contains sample files that are intended to be used as a reference and learning 
+> resource for developers who are following tutorials in the developer hub. The purpose is
+> to provide hands-on examples that demonstrate the concepts covered in the tutorials 
+> and help developers build their skills and understanding.
 
 ## Contributing
 
