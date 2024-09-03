@@ -108,7 +108,7 @@ jobs:
         lfs: true
 
     - name: Fetch the ready to ship solution from GH artifact store
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: managedSolutions
         path: ${{ inputs.solution_release_folder}}
